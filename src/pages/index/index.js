@@ -2,6 +2,7 @@ import React from "react";
 import {useEffect, useState} from "react";
 import { Card, Row, Table, Button } from "antd";
 import { getUser, getUsers } from "./api";
+import { isLoginls } from "../../utils/utils"
 
 function Index(props) {
   const [dataSource, setDataSource] = useState([]);
@@ -62,6 +63,9 @@ function Index(props) {
   // }
   
   useEffect(() => {
+    const user = isLoginls();
+    if (!user) window.location.assign("/login");
+    console.log("user : " ,user);
     getUsers()
       .then((resp) => {
         console.log("resp: ", resp);
