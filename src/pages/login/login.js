@@ -9,6 +9,7 @@ import {
   SmileOutlined,
   SyncOutlined,
   LoadingOutlined,
+  DeleteOutlined,
 } from "@ant-design/icons";
 
 function Login(props) {
@@ -43,7 +44,7 @@ function Login(props) {
       <Row>
         <Space>
           <HomeOutlined onClick={()=>handleHome()} />
-          
+          <DeleteOutlined />
         </Space>
       </Row>
       <Row
