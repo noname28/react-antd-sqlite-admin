@@ -9,6 +9,7 @@ import Dashboard from "./pages/dashboard/dashboard";
 import "sweetalert2/src/sweetalert2";
 // import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
+
 // import { login } from "./utils";
 
 function App() {
